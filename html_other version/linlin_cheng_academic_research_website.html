@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linlin Cheng | Gaze-Aware Human-Robot Interaction</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: #f5f7fa;
+        }
+
+        a {
+            color: #1e6bd6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+        }
+
+        header {
+            padding: 3rem 2rem 2rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        header h1 {
+            font-size: 2.6rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header .subtitle {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        header .affiliation {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        header .contact {
+            font-size: 0.95rem;
+        }
+
+        header .contact span {
+            margin-right: 1.2rem;
+        }
+
+        section {
+            padding: 3rem 2rem;
+        }
+
+        section h2 {
+            font-size: 1.9rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #1e6bd6;
+            display: inline-block;
+            padding-bottom: 0.3rem;
+        }
+
+        /* Hero demo */
+        .hero-demo {
+            background: #f0f3f8;
+            padding: 3rem 2rem;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .hero-grid h2 {
+            border: none;
+            font-size: 2.2rem;
+        }
+
+        .hero-grid p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-links a {
+            display: inline-block;
+            margin-right: 1rem;
+            padding: 0.6rem 1.4rem;
+            border-radius: 25px;
+            font-weight: 500;
+        }
+
+        .hero-links .primary {
+            background: #1e6bd6;
+            color: white;
+        }
+
+        .hero-links .secondary {
+            border: 2px solid #1e6bd6;
+            color: #1e6bd6;
+        }
+
+        .hero-video video {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        /* Contributions */
+        .contributions ul {
+            list-style: disc;
+            padding-left: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .contributions li {
+            margin-bottom: 0.8rem;
+        }
+
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            overflow: hidden;
+            background: white;
+        }
+
+        .project-card video {
+            width: 100%;
+            display: block;
+        }
+
+        .project-content {
+            padding: 1.3rem;
+        }
+
+        .project-content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .project-content p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* Publications */
+        .publication {
+            margin-bottom: 1.2rem;
+        }
+
+        .publication .venue {
+            font-weight: bold;
+            color: #1e6bd6;
+        }
+
+        .publication .title {
+            font-size: 1.05rem;
+            margin: 0.2rem 0;
+        }
+
+        .publication .authors {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 900px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+    <h1>Linlin Cheng</h1>
+    <div class="subtitle">PhD Candidate in Computer Science</div>
+    <div class="affiliation">Vrije Universiteit Amsterdam, Human-Robot Interaction</div>
+    <div class="contact">
+        <span>Email: linlincheng.research@gmail.com</span>
+        <span>GitHub: github.com/LinReseach</span>
+    </div>
+</header>
+
+<section class="hero-demo">
+    <div class="hero-grid">
+        <div>
+            <h2>Gaze-Aware Human-Robot Interaction</h2>
+            <p>
+                I develop low-cost, calibration-free gaze systems that enable social robots
+                to infer human attention and autonomously manage interaction flow in
+                real-world settings.
+            </p>
+            <div class="hero-links">
+                <a href="#publications" class="primary">Selected Papers</a>
+                <a href="#projects" class="secondary">System Demos</a>
+            </div>
+        </div>
+        <div class="hero-video">
+            <video autoplay muted loop playsinline>
+                <source src="videos/phd/task completion full.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+
+<section class="contributions">
+    <h2>Research Contributions</h2>
+    <ul>
+        <li>Demonstrated that appearance-based gaze estimation models reliably capture human attention patterns in live human-robot interaction.</li>
+        <li>Identified tablet-based interaction as a dominant attentional attractor that can override task relevance in multimodal HRI.</li>
+        <li>Developed a real-time gaze-based mechanism for detecting task completion without explicit user input.</li>
+        <li>Created annotation pipelines and benchmarks supporting reproducible gaze research in HRI.</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Selected Systems and Demos</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <video controls>
+                <source src="videos/phd/task completion full.mp4" type="video/mp4">
+            </video>
+            <div class="project-content">
+                <h3>Gaze-Based Task Completion Detection (GARI)</h3>
+                <p>
+                    A real-time system enabling Pepper to autonomously advance tablet-based
+                    interactions using natural gaze shifts as completion signals.
+                </p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <video controls>
+                <source src="videos/phd/Multi-modal-HRI.mp4" type="video/mp4">
+            </video>
+            <div class="project-content">
+                <h3>Multimodal Gaze Tracking in Live HRI</h3>
+                <p>
+                    A controlled incongruence experiment combining eye-tracking glasses and
+                    appearance-based gaze models to analyze attention across modalities.
+                </p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <video controls>
+                <source src="videos/phd/Automated-annotation.mp4" type="video/mp4">
+            </video>
+            <div class="project-content">
+                <h3>Automatic Gaze Target Annotation</h3>
+                <p>
+                    A pipeline for automatically identifying gaze targets in static HRI
+                    scenes, reducing manual annotation effort for engagement analysis.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="publications">
+    <h2>Publications</h2>
+
+    <div class="publication">
+        <div class="venue">IEEE RA-L 2025</div>
+        <div class="title">Look, No Hands, Gaze-Aware Human-Robot Interaction</div>
+        <div class="authors">L. Cheng, K. V. Hindriks, A. V. Belopolsky</div>
+    </div>
+
+    <div class="publication">
+        <div class="venue">IROS 2025</div>
+        <div class="title">Beware of the Tablet, A Dominant Distractor in Human-Robot Interaction</div>
+        <div class="authors">L. Cheng, A. V. Belopolsky, M. de Bruijn, K. V. Hindriks</div>
+    </div>
+
+    <div class="publication">
+        <div class="venue">RO-MAN 2025</div>
+        <div class="title">Evaluating Appearance-Based Gaze Patterns for Human-Robot Interaction</div>
+        <div class="authors">L. Cheng, K. V. Hindriks, M. de Bruijn, A. V. Belopolsky</div>
+    </div>
+
+    <div class="publication">
+        <div class="venue">RO-MAN 2024</div>
+        <div class="title">Automating Gaze Target Annotation in Human-Robot Interaction</div>
+        <div class="authors">L. Cheng, K. V. Hindriks, A. V. Belopolsky</div>
+    </div>
+</section>
+
+<section>
+    <h2>About</h2>
+    <p style="max-width: 800px;">
+        I am a PhD candidate at Vrije Universiteit Amsterdam working on gaze-aware
+        human-robot interaction. My research explores how social robots can infer
+        human attention using appearance-based gaze estimation and use this
+        information to improve interaction timing, engagement, and autonomy.
+    </p>
+</section>
+
+<footer>
+    © 2025 Linlin Cheng, Vrije Universiteit Amsterdam
+</footer>
+
+</div>
+</body>
+</html>
